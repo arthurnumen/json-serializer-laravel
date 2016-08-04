@@ -18,9 +18,9 @@ class JsonSerializer
 {
     private $manager;
 
-    public function __construct()
+    public function __construct(Manager $manager)
     {
-        $this->manager = new Manager;
+        $this->manager = $manager;
         $this->manager->setSerializer(new ApiSerializer);
     }
 
